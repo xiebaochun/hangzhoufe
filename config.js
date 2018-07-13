@@ -47,7 +47,7 @@ var config = {
   auth_cookie_name: 'hz_fe',
 
   // 程序运行的端口
-  port: 80,
+  port: 3000,
 
   // 话题列表显示的话题数量
   list_topic_count: 20,
