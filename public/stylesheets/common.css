@@ -66,5 +66,5 @@ input, textarea {
 }
 
 .none {
-    display: none;
+    display: none !important;
 }
