@@ -35,7 +35,7 @@
             <span class='dark'><%= user.location %></span>
           </li>
           <% } %>
-          <% if (user.githubUsername) { %>
+          <% if (user.githubUsername && user.githubUsername != 'juerry') { %>
           <li>
             <i class="fa fa-lg fa-fw fa-github"></i>
             <a class='dark' href="https://github.com/<%= user.githubUsername %>" target='_blank'>
