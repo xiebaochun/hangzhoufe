@@ -43,7 +43,7 @@ exports.peruserperday = makePerDayLimiter('peruserperday', function (req) {
 });
 
 exports.peripperday = makePerDayLimiter('peripperday', function (req) {
-  return 'http://www.hangzhoufe.com';
+  return '47.99.38.45';
   var realIP = req.get('x-real-ip');
   if (!realIP) {
     throw new Error('should provice `x-real-ip` header')
