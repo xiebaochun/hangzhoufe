@@ -64,7 +64,8 @@ textarea {
 input, textarea {
     background: hsla(0, 0%, 0%, 0);
 }
-
+p{margin: 0;padding: 0;}
 .none {
     display: none !important;
 }
+.tc{text-align: center;}
