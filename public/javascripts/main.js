@@ -50,4 +50,10 @@ $(document).ready(function () {
     var label = $this.data('label');
     ga('send', 'event', 'banner', 'click', label, 1.00, {'nonInteraction': 1});
   });
+
+
+  $('#wx-qrcode').click(function(){
+    var temHtml = this.outerHTML;
+    x_confirm(temHtml);
+  });
 });
