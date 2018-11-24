@@ -58,3 +58,12 @@ $ make test-cov
 ## License
 
 MIT
+
+## 启动mongo
+	/local/mongo/bin/mongod
+## 启动redis
+	redis-server
+
+
+nohup node app.js >/dev/null 2>&1 &
+
