@@ -41,7 +41,25 @@
   <% if (!current_user || !current_user.isAdvanced) { %>
     <%- partial('./_ads') %>
   <% } %>
-
+  <div class='panel'>
+    <div class='header'>
+      <span class='col_fade'>QQ群</span>
+    </div>
+    <div class='inner'>
+      <ol class="friendship-community">
+        <li class="tl">
+            杭州前端开发：139761568
+        </li>
+        <li class="tl">
+            广州前端开发：116223028
+        </li>
+        <li class="tl">
+            深圳前端开发：883736776
+        </li>
+        <div class="sep10"></div>
+      </ol>
+    </div>
+  </div>
   <% if (typeof(no_reply_topics) !== 'undefined') { %>
   <div class='panel'>
     <div class='header'>
@@ -101,25 +119,6 @@
             <img src="<%- staticFile('/public/images/phphub-logo.png') %>">
           </a>
         </li>
-      </ol>
-    </div>
-  </div>
-  <div class='panel'>
-    <div class='header'>
-      <span class='col_fade'>QQ群</span>
-    </div>
-    <div class='inner'>
-      <ol class="friendship-community">
-        <li class="tl">
-            杭州前端开发：139761568
-        </li>
-        <li class="tl">
-            广州前端开发：116223028
-        </li>
-        <li class="tl">
-            深圳前端开发：883736776
-        </li>
-        <div class="sep10"></div>
       </ol>
     </div>
   </div>
