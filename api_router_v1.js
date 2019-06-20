@@ -5,6 +5,7 @@ var userController    = require('./api/v1/user');
 var toolsController   = require('./api/v1/tools');
 var replyController   = require('./api/v1/reply');
 var messageController = require('./api/v1/message');
+var activtyController = require('./api/v1/activity');
 var middleware        = require('./api/v1/middleware');
 var limit             = require('./middlewares/limit');
 var config            = require('./config');
@@ -41,5 +42,8 @@ router.get('/messages', middleware.auth, messageController.index);
 router.get('/message/count', middleware.auth, messageController.count);
 router.post('/message/mark_all', middleware.auth, messageController.markAll);
 router.post('/message/mark_one/:msg_id', middleware.auth, messageController.markOne);
+
+
+router.post('/activity/create', activtyController.create);
 
 module.exports = router;
