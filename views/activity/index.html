@@ -4,6 +4,13 @@
 	<title>杭州前端开发-活动</title>
 </head>
 <body>
-	活动
+	活动-报名列表
+	<% if (ActivityUsers.length > 0) { %>
+      <ol style="margin-top: 10px;">
+        <%- partial('activity/list', { collection: ActivityUsers, as: 'user' }) %>
+      </ol>
+      <% } else { %>
+      <p>无</p>
+      <% } %>
 </body>
 </html>
