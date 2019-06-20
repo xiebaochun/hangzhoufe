@@ -12,7 +12,7 @@ var ActivityUser    = models.ActivityUser;
  */
 exports.index = function (req, res, next) {
     ActivityUser.find({}, {}, {}, function(err, ActivityUsers) {
-        console.log(ActivityUsers);
+        // console.log(ActivityUsers);
         res.render('activity/index', {
             ActivityUsers: ActivityUsers
         });
